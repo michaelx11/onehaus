@@ -25,6 +25,13 @@ class DropletCreationHelper:
                                        backups=self.inputDict['backups'])
         droplet.create()
 
+        actions = droplet.get_actions()
+        for action in actions:
+            action.load()
+
+            sys.stderr.write(str(action.status) + "\n")
+
+
     def exitWithError(self, errorMsg):
         errorDict = { "error" : errorMsg }
         print(json.dumps(errorDict))

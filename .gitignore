@@ -63,3 +63,5 @@ target/
 
 credentials.py
 credentials.rb
+
+*.sw*

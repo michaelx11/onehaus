@@ -1,0 +1,7 @@
+{
+  "name": "TestingDroplet",
+  "region": "nyc2",
+  "image": "ubuntu-14-04-x64",
+  "size_slug": "512mb",
+  "backups": "True"
+}
